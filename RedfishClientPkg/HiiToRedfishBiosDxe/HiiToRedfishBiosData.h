@@ -38,10 +38,11 @@ extern EFI_GUID  gHiiToRedfishBiosFormsetGuid;
 //
 typedef struct {
   UINT8     RedfishBiosOption1Data;
+  UINT8     Reserved0;
   CHAR16    RedfishBiosOption2Data[ID_STRING_MAX_WITH_TERMINATOR];
   UINT8     RedfishBiosOption3Data;
   UINT8     RedfishBiosOption4Data;
-  UINT8     Reserved;
+  UINT8     Reserved1;
 } HII_TO_REDFISH_BIOS_EFI_VARSTORE_DATA;
 
 #pragma pack()
